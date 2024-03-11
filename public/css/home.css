@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #ff744e, #fbe799);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    place-items: center; 
+    height: 100vh;
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+    padding: 2em; 
+    background-color: #fff;
+    border-radius: 1em;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
+    opacity: 0.8;
+    display: grid;
+    place-items: center;
+}
+
+
+.login-message {
+    background-color: #fff;
+    color: black;
+    padding: 1em;
+    border-radius: 0.5em; 
+    margin-top: 2em;
+    text-align: center;
+}
+
+.login-button {
+    display: inline-block;
+    padding: 1em 2em;
+    background-color: #df4a00;
+    color: #fff;
+    border: none;
+    border-radius: 0.5em; 
+    text-decoration: none;
+    text-align: center;
+}
+
+.login-button:hover {
+    background-color: #e77b0f;
+}
+
+.links{
+    text-decoration: none;
+    color: white;
+}
+
+.error-message {
+    background-color: #f7c65c;
+    color: #c75305;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.success-message{
+    background-color: #9aff9f;
+    color: #156831;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1em;
+}
+
+.button-group button {
+    margin-right: 1em;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .container {
+        padding: 1em;
+    }
+
+    .crud-links a {
+        display: block;
+        margin: 1em auto; 
+    }
+
+    .login-button{
+        padding: 0.5em 0.8em;
+    }
+
+    .button-group {
+        flex-direction: column;
+    }
+
+    .button-group button {
+        margin-right: 0;
+        margin-bottom: 0.5em;
+        width: 100%;
+    }
+}
+
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .container {
+        width: 80%;
+    }
+
+    .login-button{
+        padding: 0.8em 1em;
+    }
+}
