@@ -1,6 +1,6 @@
-Öncelikle projeyi Github'dan çekebilmek için git komutları kullanacağımızdan dolayı, Git Bash kurulumu yapılır.
-https://git-scm.com/downloads linki üzerinden işletim sisteminize uygun olan dosyayı indirin ve kurun.
-Daha sonra Git Bash'i çalıştırıp onun üzerinden sırayla aşağıdaki komutları çalıştıracağız.
+Bu projeyi kurmadan önce 'PHP_Laravel_Project' isimli backend projesinin kurulumunu yapınız.
+Backend projesinin kurulum aşamaları tamamlandıktan sonra aşağıdaki adıımları uygulayın:
+Git Bash'i çalıştırıp onun üzerinden sırayla komutları çalıştıracağız.
 İlk olarak projeyi Github'dan klonlamak için, 
 git clone https://github.com/ervayalcn/PHP_Laravel_Project_Frontend.git
 komutunu çalıştırın.
@@ -19,6 +19,8 @@ Ancak bu dosyalara doğrudan URL üzerinden erişilemez.
 Bu nedenle, public/storage dizinine bir sembolik bağlantı oluşturmak ve bu sayede storage/app/public dizinindeki dosyaları, 
 web tarayıcıları üzerinden erişilebilir hale getirebilmek için şu komut kullanılır:
 php artisan storage:link
+Daha sonra veri tabanı tablolarını çalıştırmak için şu komutu çalıştırın:
+php artisan migrate
 Bu komutu da çalıştırdıktan sonra,
 php artisan serve
 komutu ile uygulamayı çalıştırabilirsiniz.
